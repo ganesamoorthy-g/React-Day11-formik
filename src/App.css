@@ -1,0 +1,31 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-section {
+  width: calc(50% - 10px); /* Adjust the width as needed */
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    flex-direction: column;
+  }
+
+  .form-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
